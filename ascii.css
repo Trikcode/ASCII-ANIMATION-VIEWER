@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ccccff;
+}
+main {
+  margin-top: 3rem;
+}
+main h1 {
+  text-align: center;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.animation-container {
+  margin-top: 2px;
+  height: 400px;
+  width: 90%;
+  background-color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 3px;
+}
+.box-container {
+  display: flex;
+  max-width: 50vw;
+  margin: auto;
+}
+.box {
+  background-color: #ccccff;
+  height: 5px;
+  width: 5px;
+  padding-top: 30px;
+  padding-right: 70px;
+  padding-bottom: 30px;
+  padding-left: 70px;
+  border-width: 5px 5px 5px 5px;
+  border-color: black;
+  border-style: solid;
+  border-radius: 8px;
+  margin-bottom: 3rem;
+  margin-top: 2.5rem;
+  margin-right: 2rem;
+}
+.box2 {
+  padding-right: 60px;
+  padding-left: 60px;
+}
+.box3 {
+  padding-right: 50px;
+  padding-left: 80px;
+}
+.box4 {
+  padding-right: 120px;
+  padding-left: 100px;
+}
+.text {
+  text-align: center;
+  color: black;
+  position: absolute;
+  font-family: helvetical;
+  font-size: 18px;
+  bottom: 80px;
+  padding-left: 2px;
+  padding-right: 2px;
+  background-color: #ccccff;
+}
+.box1 .text {
+  left: 330px;
+}
+.box2 .text {
+  left: 515px;
+}
+.box3 .text {
+  left: 680px;
+}
+.box4 .text {
+  left: 880px;
+}
+.control-buttons {
+  display: flex;
+  margin-left: -2.7rem;
+}
+.box2 .control-buttons {
+  margin-left: -2.2rem;
+}
+.box3 .control-buttons {
+  margin-left: -3.8rem;
+}
+button {
+  padding: 4px;
+  margin-right: 1rem;
+  border-radius: 4px;
+}
+select {
+  background-color: white;
+}
+.btn1 {
+  background: green;
+}
+.btn2 {
+  background: red;
+}
+.radio-container {
+  display: flex;
+  align-items: center;
+  margin-left: -5rem;
+}
+label {
+  padding-right: 4px;
+}
+
+@media screen and (max-width: 1000px) {
+  .box-container {
+    max-width: 70%;
+    margin: auto;
+  }
+
+  .box {
+    margin: 10px;
+    padding-right: 10px;
+    padding-left: 50;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 70px;
+  }
+  .text {
+    bottom: 95px;
+  }
+  .box1 .text {
+    left: 135px;
+    font-size: small;
+  }
+  .box2 .text {
+    left: 270px;
+    font-size: small;
+  }
+  .box2 {
+    padding-left: 40px;
+    padding-right: 50px;
+  }
+  .box3 .text {
+    left: 420px;
+    font-size: small;
+  }
+  .box3 {
+    padding-right: 45px;
+  }
+  .box4 .text {
+    left: 550px;
+    font-size: small;
+  }
+  .box4 {
+    padding-right: 96px;
+  }
+  .control-buttons {
+    margin-left: -4rem;
+    font-size: small;
+  }
+}
+@media screen and (max-width: 700px) {
+  .box-container {
+    max-width: 80%;
+    margin: auto;
+  }
+  .box4 {
+    padding-right: 96px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .box-container {
+    max-width: 100%;
+    margin: auto;
+  }
+  .text {
+    bottom: 78px;
+  }
+  .box1 .text {
+    left: 25px;
+  }
+  .box2 .text {
+    left: 156px;
+  }
+
+  .box3 .text {
+    left: 300px;
+  }
+  .radio-container {
+    display: block;
+  }
+  .box4 {
+    padding-bottom: 50px;
+  }
+  .box4 .text {
+    left: 430px;
+  }
+}

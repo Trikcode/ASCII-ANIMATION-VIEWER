@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="ascii.css" />
+    <title>ASCIImation</title>
+  </head>
+  <body>
+    <main>
+      <h1>ASCII Animation Viewer</h1>
+      <textarea class="animation-container" id="mytextarea"></textarea>
+      <div class="box-container">
+        <div class="box box1">
+          <h4 class="text">play-controls:</h4>
+          <div class="control-buttons">
+            <button class="btn1">start</button>
+            <button class="btn2">stop</button>
+          </div>
+        </div>
+        <div class="box box2">
+          <h4 class="text">Animation:</h4>
+          <div class="animation control-buttons">
+            <select name="btn" id="medium-btn">
+              <option value="BLANK">Blank</option>
+              <option value="EXCERCISE">Exercise</option>
+              <option value="JUGGLER">Juggler</option>
+              <option value="BIKE">Bike</option>
+              <option value="DIVE">Dive</option>
+              <option value="OWN">Own</option>
+              <option value="SCARE">Scare</option>
+              <option value="FACE">Face</option>
+              <option value="HUMAN">Human</option>
+            </select>
+          </div>
+        </div>
+        <div class="box box3">
+          <h4 class="text">Size:</h4>
+          <div class="size control-buttons">
+            <select name="btn" id="setSize">
+              <option value="medium">Medium</option>
+
+              <option value="large">Large</option>
+              <option value="tiny">Small</option>
+              <option value="extra">Extra Large</option>
+              <option value="extrax">XXL</option>
+            </select>
+          </div>
+        </div>
+        <div class="box box4">
+          <h4 class="text">Speed:</h4>
+          <div class="radio-container control-buttons">
+            <input name="time" type="radio" id="turbo" class="rad" />
+            <label>Turbo </label>
+            <input type="radio" class="rad" name="time" id="normal" />
+            <label>Normal </label>
+            <input name="time" class="rad" type="radio" id="slo" />
+            <label>Slo_Mo </label>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script type="text/javascript" src="animations.js"></script>
+    <script type="text/javascript" src="myanimation.js"></script>
+    <script src="ascii.js"></script>
+  </body>
+</html>
